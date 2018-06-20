@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */; };
+		2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D152A3F558641792407320 /* Pods_PuccaVideo.framework */; };
+		CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */; };
+		CE36A05C20DA925C003E3DBA /* SearchServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05B20DA925C003E3DBA /* SearchServices.swift */; };
+		CE36A05E20DA936F003E3DBA /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */; };
+		CE36A06220DAB02E003E3DBA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06120DAB02E003E3DBA /* NetworkError.swift */; };
+		CE36A06620DAB2B6003E3DBA /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */; };
+		CE36A06820DAB320003E3DBA /* ThumbnailsMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */; };
+		CE36A06A20DAB3FE003E3DBA /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06920DAB3FE003E3DBA /* Snippet.swift */; };
+		CE36A06C20DAB634003E3DBA /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06B20DAB634003E3DBA /* Id.swift */; };
+		CE36A06E20DAB682003E3DBA /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06D20DAB682003E3DBA /* Items.swift */; };
+		CE36A07420DAC417003E3DBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36A07320DAC417003E3DBA /* Default-568h@2x.png */; };
+		CE36A07620DAD323003E3DBA /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A07520DAD323003E3DBA /* String+Localizable.swift */; };
+		CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5E320D9465E006563FE /* AppDelegate.swift */; };
+		CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EA20D94660006563FE /* Assets.xcassets */; };
+		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
+		CE4AC5F920D94660006563FE /* PuccaVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */; };
+		CE4AC60420D94660006563FE /* PuccaVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */; };
+		D0D697255B21AAB408A86C2B /* Pods_PuccaVideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE4AC5F520D94660006563FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4AC5D820D9465E006563FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4AC5DF20D9465E006563FE;
+			remoteInfo = PuccaVideo;
+		};
+		CE4AC60020D94660006563FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4AC5D820D9465E006563FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4AC5DF20D9465E006563FE;
+			remoteInfo = PuccaVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		076161CA8FE72900BDFC444A /* Pods-PuccaVideoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15D152A3F558641792407320 /* Pods_PuccaVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E59347F6F9E837B7A965F0 /* Pods-PuccaVideoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		555F2861B9B3E0408A9C7E5C /* Pods-PuccaVideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests.release.xcconfig"; sourceTree = "<group>"; };
+		74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A6EBDF14903609C1AC5B57 /* Pods-PuccaVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.release.xcconfig"; sourceTree = "<group>"; };
+		CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConveniencesViewController.swift; sourceTree = "<group>"; };
+		CE36A05B20DA925C003E3DBA /* SearchServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServices.swift; sourceTree = "<group>"; };
+		CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		CE36A06120DAB02E003E3DBA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsMedium.swift; sourceTree = "<group>"; };
+		CE36A06920DAB3FE003E3DBA /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		CE36A06B20DAB634003E3DBA /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		CE36A06D20DAB682003E3DBA /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		CE36A07320DAC417003E3DBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE36A07520DAD323003E3DBA /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		CE4AC5E020D9465E006563FE /* PuccaVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuccaVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4AC5E320D9465E006563FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE4AC5EA20D94660006563FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4AC5ED20D94660006563FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4AC5EF20D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4AC5F420D94660006563FE /* PuccaVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuccaVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuccaVideoTests.swift; sourceTree = "<group>"; };
+		CE4AC5FA20D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuccaVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuccaVideoUITests.swift; sourceTree = "<group>"; };
+		CE4AC60520D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CDC6E00DF14911C2E3DFB8 /* Pods-PuccaVideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18688D12AA456FDD740F6F0 /* Pods-PuccaVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4AC5DD20D9465E006563FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4AC5F120D94660006563FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4AC5FC20D94660006563FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D697255B21AAB408A86C2B /* Pods_PuccaVideoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5895EC2E36F7A4A7503612FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D152A3F558641792407320 /* Pods_PuccaVideo.framework */,
+				D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */,
+				74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A67C3145194DEF743E597620 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F18688D12AA456FDD740F6F0 /* Pods-PuccaVideo.debug.xcconfig */,
+				81A6EBDF14903609C1AC5B57 /* Pods-PuccaVideo.release.xcconfig */,
+				076161CA8FE72900BDFC444A /* Pods-PuccaVideoTests.debug.xcconfig */,
+				555F2861B9B3E0408A9C7E5C /* Pods-PuccaVideoTests.release.xcconfig */,
+				40E59347F6F9E837B7A965F0 /* Pods-PuccaVideoUITests.debug.xcconfig */,
+				D2CDC6E00DF14911C2E3DFB8 /* Pods-PuccaVideoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE4AC5D720D9465E006563FE = {
+			isa = PBXGroup;
+			children = (
+				CE36A07320DAC417003E3DBA /* Default-568h@2x.png */,
+				CE4AC5E220D9465E006563FE /* PuccaVideo */,
+				CE4AC5F720D94660006563FE /* PuccaVideoTests */,
+				CE4AC60220D94660006563FE /* PuccaVideoUITests */,
+				CE4AC5E120D9465E006563FE /* Products */,
+				A67C3145194DEF743E597620 /* Pods */,
+				5895EC2E36F7A4A7503612FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE4AC5E120D9465E006563FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC5E020D9465E006563FE /* PuccaVideo.app */,
+				CE4AC5F420D94660006563FE /* PuccaVideoTests.xctest */,
+				CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE4AC5E220D9465E006563FE /* PuccaVideo */ = {
+			isa = PBXGroup;
+			children = (
+				CEF9FA1D20D9561B007A0EEF /* Application */,
+				CEF9FA1E20D9563D007A0EEF /* Resources */,
+				CEF9FA1F20D95655007A0EEF /* Conveniences */,
+				CEF9FA2020D95667007A0EEF /* Models */,
+				CEF9FA2120D95686007A0EEF /* Services */,
+				CEF9FA2220D956A2007A0EEF /* Scenes */,
+			);
+			path = PuccaVideo;
+			sourceTree = "<group>";
+		};
+		CE4AC5F720D94660006563FE /* PuccaVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */,
+				CE4AC5FA20D94660006563FE /* Info.plist */,
+			);
+			path = PuccaVideoTests;
+			sourceTree = "<group>";
+		};
+		CE4AC60220D94660006563FE /* PuccaVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */,
+				CE4AC60520D94660006563FE /* Info.plist */,
+			);
+			path = PuccaVideoUITests;
+			sourceTree = "<group>";
+		};
+		CEF9FA1D20D9561B007A0EEF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC5E320D9465E006563FE /* AppDelegate.swift */,
+				CE4AC5EF20D94660006563FE /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CEF9FA1E20D9563D007A0EEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC5EA20D94660006563FE /* Assets.xcassets */,
+				CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEF9FA1F20D95655007A0EEF /* Conveniences */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */,
+				CE36A07520DAD323003E3DBA /* String+Localizable.swift */,
+			);
+			path = Conveniences;
+			sourceTree = "<group>";
+		};
+		CEF9FA2020D95667007A0EEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A06120DAB02E003E3DBA /* NetworkError.swift */,
+				CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */,
+				CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */,
+				CE36A06920DAB3FE003E3DBA /* Snippet.swift */,
+				CE36A06B20DAB634003E3DBA /* Id.swift */,
+				CE36A06D20DAB682003E3DBA /* Items.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEF9FA2120D95686007A0EEF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05B20DA925C003E3DBA /* SearchServices.swift */,
+				CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEF9FA2220D956A2007A0EEF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE4AC5DF20D9465E006563FE /* PuccaVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4AC60820D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideo" */;
+			buildPhases = (
+				BBA63AC12E85A29285F87BFC /* [CP] Check Pods Manifest.lock */,
+				CE4AC5DC20D9465E006563FE /* Sources */,
+				CE4AC5DD20D9465E006563FE /* Frameworks */,
+				CE4AC5DE20D9465E006563FE /* Resources */,
+				BF5FF3674A024889A7B6EF9F /* [CP] Embed Pods Frameworks */,
+				9B4D5F8BE8531A96D93C6776 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuccaVideo;
+			productName = PuccaVideo;
+			productReference = CE4AC5E020D9465E006563FE /* PuccaVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE4AC5F320D94660006563FE /* PuccaVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4AC60B20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoTests" */;
+			buildPhases = (
+				B0CD38069D0ED746A34AAEFC /* [CP] Check Pods Manifest.lock */,
+				CE4AC5F020D94660006563FE /* Sources */,
+				CE4AC5F120D94660006563FE /* Frameworks */,
+				CE4AC5F220D94660006563FE /* Resources */,
+				95F7DA9069E3AD0639776B2C /* [CP] Embed Pods Frameworks */,
+				DC62C789374AF3D3224489C5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4AC5F620D94660006563FE /* PBXTargetDependency */,
+			);
+			name = PuccaVideoTests;
+			productName = PuccaVideoTests;
+			productReference = CE4AC5F420D94660006563FE /* PuccaVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE4AC5FE20D94660006563FE /* PuccaVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4AC60E20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoUITests" */;
+			buildPhases = (
+				31127655E04BCF2BDD4F255D /* [CP] Check Pods Manifest.lock */,
+				CE4AC5FB20D94660006563FE /* Sources */,
+				CE4AC5FC20D94660006563FE /* Frameworks */,
+				CE4AC5FD20D94660006563FE /* Resources */,
+				111FA7E936FD85986674C5B0 /* [CP] Embed Pods Frameworks */,
+				FE2E9900FB5916553AE00ABF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4AC60120D94660006563FE /* PBXTargetDependency */,
+			);
+			name = PuccaVideoUITests;
+			productName = PuccaVideoUITests;
+			productReference = CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4AC5D820D9465E006563FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Isabela Karen Louli";
+				TargetAttributes = {
+					CE4AC5DF20D9465E006563FE = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					CE4AC5F320D94660006563FE = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = CE4AC5DF20D9465E006563FE;
+					};
+					CE4AC5FE20D94660006563FE = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = CE4AC5DF20D9465E006563FE;
+					};
+				};
+			};
+			buildConfigurationList = CE4AC5DB20D9465E006563FE /* Build configuration list for PBXProject "PuccaVideo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE4AC5D720D9465E006563FE;
+			productRefGroup = CE4AC5E120D9465E006563FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE4AC5DF20D9465E006563FE /* PuccaVideo */,
+				CE4AC5F320D94660006563FE /* PuccaVideoTests */,
+				CE4AC5FE20D94660006563FE /* PuccaVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4AC5DE20D9465E006563FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */,
+				CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */,
+				CE36A07420DAC417003E3DBA /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4AC5F220D94660006563FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4AC5FD20D94660006563FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		111FA7E936FD85986674C5B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31127655E04BCF2BDD4F255D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuccaVideoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F7DA9069E3AD0639776B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B4D5F8BE8531A96D93C6776 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0CD38069D0ED746A34AAEFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuccaVideoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA63AC12E85A29285F87BFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuccaVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF5FF3674A024889A7B6EF9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC62C789374AF3D3224489C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2E9900FB5916553AE00ABF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4AC5DC20D9465E006563FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */,
+				CE36A06220DAB02E003E3DBA /* NetworkError.swift in Sources */,
+				CE36A06620DAB2B6003E3DBA /* Thumbnails.swift in Sources */,
+				CE36A06820DAB320003E3DBA /* ThumbnailsMedium.swift in Sources */,
+				CE36A06E20DAB682003E3DBA /* Items.swift in Sources */,
+				CE36A05C20DA925C003E3DBA /* SearchServices.swift in Sources */,
+				CE36A05E20DA936F003E3DBA /* NetworkDispatcher.swift in Sources */,
+				CE36A06A20DAB3FE003E3DBA /* Snippet.swift in Sources */,
+				CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */,
+				CE36A06C20DAB634003E3DBA /* Id.swift in Sources */,
+				CE36A07620DAD323003E3DBA /* String+Localizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4AC5F020D94660006563FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4AC5F920D94660006563FE /* PuccaVideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4AC5FB20D94660006563FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4AC60420D94660006563FE /* PuccaVideoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4AC5F620D94660006563FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4AC5DF20D9465E006563FE /* PuccaVideo */;
+			targetProxy = CE4AC5F520D94660006563FE /* PBXContainerItemProxy */;
+		};
+		CE4AC60120D94660006563FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4AC5DF20D9465E006563FE /* PuccaVideo */;
+			targetProxy = CE4AC60020D94660006563FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4AC5ED20D94660006563FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4AC60620D94660006563FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE4AC60720D94660006563FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4AC60920D94660006563FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F18688D12AA456FDD740F6F0 /* Pods-PuccaVideo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuccaVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE4AC60A20D94660006563FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A6EBDF14903609C1AC5B57 /* Pods-PuccaVideo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuccaVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE4AC60C20D94660006563FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076161CA8FE72900BDFC444A /* Pods-PuccaVideoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuccaVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuccaVideo.app/PuccaVideo";
+			};
+			name = Debug;
+		};
+		CE4AC60D20D94660006563FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555F2861B9B3E0408A9C7E5C /* Pods-PuccaVideoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuccaVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuccaVideo.app/PuccaVideo";
+			};
+			name = Release;
+		};
+		CE4AC60F20D94660006563FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E59347F6F9E837B7A965F0 /* Pods-PuccaVideoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuccaVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuccaVideo;
+			};
+			name = Debug;
+		};
+		CE4AC61020D94660006563FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2CDC6E00DF14911C2E3DFB8 /* Pods-PuccaVideoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuccaVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuccaVideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4AC5DB20D9465E006563FE /* Build configuration list for PBXProject "PuccaVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4AC60620D94660006563FE /* Debug */,
+				CE4AC60720D94660006563FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4AC60820D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4AC60920D94660006563FE /* Debug */,
+				CE4AC60A20D94660006563FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4AC60B20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4AC60C20D94660006563FE /* Debug */,
+				CE4AC60D20D94660006563FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4AC60E20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4AC60F20D94660006563FE /* Debug */,
+				CE4AC61020D94660006563FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE4AC5D820D9465E006563FE /* Project object */;
+}
