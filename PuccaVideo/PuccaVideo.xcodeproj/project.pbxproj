@@ -18,6 +18,8 @@
 		CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05520DA741B003E3DBA /* HomeViewController.swift */; };
 		CE36A05820DA7E9B003E3DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05720DA7E9B003E3DBA /* Environment.swift */; };
 		CE36A05A20DA81F1003E3DBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE36A05920DA81F1003E3DBA /* Localizable.strings */; };
+		CE36A07020DABB91003E3DBA /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06F20DABB91003E3DBA /* VideoTableViewCell.swift */; };
+		CE36A07220DABC99003E3DBA /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A07120DABC99003E3DBA /* VideoViewController.swift */; };
 		CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5E320D9465E006563FE /* AppDelegate.swift */; };
 		CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EA20D94660006563FE /* Assets.xcassets */; };
 		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
@@ -59,6 +61,8 @@
 		CE36A05520DA741B003E3DBA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE36A05720DA7E9B003E3DBA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CE36A05920DA81F1003E3DBA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CE36A06F20DABB91003E3DBA /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		CE36A07120DABC99003E3DBA /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		CE4AC5E020D9465E006563FE /* PuccaVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuccaVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AC5E320D9465E006563FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4AC5EA20D94660006563FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				CE36A05520DA741B003E3DBA /* HomeViewController.swift */,
+				CE36A07120DABC99003E3DBA /* VideoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */,
+				CE36A06F20DABB91003E3DBA /* VideoTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -487,6 +493,8 @@
 				CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */,
 				CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */,
 				CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */,
+				CE36A07220DABC99003E3DBA /* VideoViewController.swift in Sources */,
+				CE36A07020DABB91003E3DBA /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

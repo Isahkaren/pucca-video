@@ -105,5 +105,94 @@
             </objects>
             <point key="canvasLocation" x="-168.80000000000001" y="-40.029985007496258"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="UFQ-G7-3nb">
+            <objects>
+                <viewController id="Nmv-RW-ngt" customClass="VideoViewController" customModule="PuccaVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Yn-da-u1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvp-cw-fPq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                                <color key="backgroundColor" red="1" green="0.26877391950000001" blue="0.43787116679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="6Xy-p2-1LB"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O6x-dA-c7X">
+                                <rect key="frame" x="0.0" y="236" width="375" height="431"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCellIdentifier" rowHeight="64" id="cJd-sM-6mv" customClass="VideoTableViewCell" customModule="PuccaVideo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cJd-sM-6mv" id="1Gr-xi-cnY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="94e-sr-0oJ">
+                                                    <rect key="frame" x="5" y="0.0" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="A5y-Kv-Xzn"/>
+                                                        <constraint firstAttribute="width" constant="50" id="iou-a1-t5O"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isabela Karen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EHf-MR-QHl">
+                                                    <rect key="frame" x="5" y="50" width="370" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="11"/>
+                                                    <color key="textColor" red="0.45411001560000003" green="0.45411001560000003" blue="0.45411001560000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not funny to dress up your pet and scare the crap out of it for your own amusement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WF4-IO-YSJ">
+                                                    <rect key="frame" x="57" y="0.0" width="318" height="45"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.45411001560000003" green="0.45411001560000003" blue="0.45411001560000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="WF4-IO-YSJ" secondAttribute="trailing" id="4SW-mn-y05"/>
+                                                <constraint firstItem="94e-sr-0oJ" firstAttribute="top" secondItem="1Gr-xi-cnY" secondAttribute="top" id="7NU-nk-BMD"/>
+                                                <constraint firstItem="EHf-MR-QHl" firstAttribute="top" secondItem="WF4-IO-YSJ" secondAttribute="bottom" constant="5" id="DLe-Dd-j0x"/>
+                                                <constraint firstItem="WF4-IO-YSJ" firstAttribute="top" secondItem="1Gr-xi-cnY" secondAttribute="top" id="KkP-Xf-QPt"/>
+                                                <constraint firstAttribute="bottom" secondItem="EHf-MR-QHl" secondAttribute="bottom" id="Pws-Cq-E20"/>
+                                                <constraint firstItem="EHf-MR-QHl" firstAttribute="top" secondItem="94e-sr-0oJ" secondAttribute="bottom" id="SB2-Ur-Fxk"/>
+                                                <constraint firstItem="WF4-IO-YSJ" firstAttribute="leading" secondItem="94e-sr-0oJ" secondAttribute="trailing" constant="2" id="aJa-73-DAG"/>
+                                                <constraint firstItem="94e-sr-0oJ" firstAttribute="leading" secondItem="1Gr-xi-cnY" secondAttribute="leading" constant="5" id="aLc-2Z-90W"/>
+                                                <constraint firstAttribute="trailing" secondItem="EHf-MR-QHl" secondAttribute="trailing" id="akP-d7-9Bi"/>
+                                                <constraint firstItem="EHf-MR-QHl" firstAttribute="leading" secondItem="1Gr-xi-cnY" secondAttribute="leading" constant="5" id="wFp-hY-tkL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorNameLabel" destination="EHf-MR-QHl" id="AQu-bb-bFN"/>
+                                            <outlet property="authorProfileImage" destination="94e-sr-0oJ" id="N0a-iG-P4b"/>
+                                            <outlet property="commentLabel" destination="WF4-IO-YSJ" id="5cy-dc-rTy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fvp-cw-fPq" firstAttribute="trailing" secondItem="Sf3-zP-hWO" secondAttribute="trailing" id="4y8-Wb-Ud1"/>
+                            <constraint firstItem="O6x-dA-c7X" firstAttribute="leading" secondItem="Sf3-zP-hWO" secondAttribute="leading" id="PIY-kh-A8b"/>
+                            <constraint firstItem="O6x-dA-c7X" firstAttribute="bottom" secondItem="Sf3-zP-hWO" secondAttribute="bottom" id="SaH-KF-358"/>
+                            <constraint firstItem="O6x-dA-c7X" firstAttribute="top" secondItem="fvp-cw-fPq" secondAttribute="bottom" id="bKF-j5-7He"/>
+                            <constraint firstItem="fvp-cw-fPq" firstAttribute="leading" secondItem="Sf3-zP-hWO" secondAttribute="leading" id="gdd-e7-tV8"/>
+                            <constraint firstItem="fvp-cw-fPq" firstAttribute="top" secondItem="Sf3-zP-hWO" secondAttribute="top" id="uhd-mG-nif"/>
+                            <constraint firstItem="O6x-dA-c7X" firstAttribute="trailing" secondItem="Sf3-zP-hWO" secondAttribute="trailing" id="yDI-C9-TW7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sf3-zP-hWO"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="O6x-dA-c7X" id="Ns2-I1-yXy"/>
+                        <outlet property="videoView" destination="fvp-cw-fPq" id="yIg-01-SeW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xtm-0c-ueG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="-40.029985007496258"/>
+        </scene>
     </scenes>
 </document>
