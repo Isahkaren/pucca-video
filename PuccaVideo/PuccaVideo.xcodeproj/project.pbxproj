@@ -12,7 +12,12 @@
 		CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */; };
 		CE36A04520DA4A43003E3DBA /* SampleModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */; };
 		CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */; };
-		CE36A04A20DA4AFC003E3DBA /* SampleScenesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04920DA4AFC003E3DBA /* SampleScenesViewController.swift */; };
+		CE36A04D20DA517D003E3DBA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36A04C20DA517D003E3DBA /* Home.storyboard */; };
+		CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */; };
+		CE36A05420DA73C5003E3DBA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */; };
+		CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05520DA741B003E3DBA /* HomeViewController.swift */; };
+		CE36A05820DA7E9B003E3DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05720DA7E9B003E3DBA /* Environment.swift */; };
+		CE36A05A20DA81F1003E3DBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE36A05920DA81F1003E3DBA /* Localizable.strings */; };
 		CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5E320D9465E006563FE /* AppDelegate.swift */; };
 		CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EA20D94660006563FE /* Assets.xcassets */; };
 		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
@@ -48,7 +53,12 @@
 		CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConveniencesViewController.swift; sourceTree = "<group>"; };
 		CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModelViewController.swift; sourceTree = "<group>"; };
 		CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleServiceViewController.swift; sourceTree = "<group>"; };
-		CE36A04920DA4AFC003E3DBA /* SampleScenesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleScenesViewController.swift; sourceTree = "<group>"; };
+		CE36A04C20DA517D003E3DBA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE36A05520DA741B003E3DBA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE36A05720DA7E9B003E3DBA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CE36A05920DA81F1003E3DBA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CE4AC5E020D9465E006563FE /* PuccaVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuccaVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AC5E320D9465E006563FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4AC5EA20D94660006563FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +126,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE36A04B20DA50E5003E3DBA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05020DA51CE003E3DBA /* Cells */,
+				CE36A04F20DA51B7003E3DBA /* ViewModels */,
+				CE36A04E20DA51A2003E3DBA /* ViewControllers */,
+				CE36A04C20DA517D003E3DBA /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE36A04E20DA51A2003E3DBA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05520DA741B003E3DBA /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE36A04F20DA51B7003E3DBA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE36A05020DA51CE003E3DBA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CE4AC5D720D9465E006563FE = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +219,7 @@
 			children = (
 				CE4AC5E320D9465E006563FE /* AppDelegate.swift */,
 				CE4AC5EF20D94660006563FE /* Info.plist */,
+				CE36A05720DA7E9B003E3DBA /* Environment.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -181,6 +227,7 @@
 		CEF9FA1E20D9563D007A0EEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE36A05920DA81F1003E3DBA /* Localizable.strings */,
 				CE4AC5EA20D94660006563FE /* Assets.xcassets */,
 				CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */,
 			);
@@ -214,7 +261,7 @@
 		CEF9FA2220D956A2007A0EEF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04920DA4AFC003E3DBA /* SampleScenesViewController.swift */,
+				CE36A04B20DA50E5003E3DBA /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -231,7 +278,6 @@
 				CE4AC5DD20D9465E006563FE /* Frameworks */,
 				CE4AC5DE20D9465E006563FE /* Resources */,
 				BF5FF3674A024889A7B6EF9F /* [CP] Embed Pods Frameworks */,
-				9B4D5F8BE8531A96D93C6776 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,8 +296,6 @@
 				CE4AC5F020D94660006563FE /* Sources */,
 				CE4AC5F120D94660006563FE /* Frameworks */,
 				CE4AC5F220D94660006563FE /* Resources */,
-				95F7DA9069E3AD0639776B2C /* [CP] Embed Pods Frameworks */,
-				DC62C789374AF3D3224489C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,8 +315,6 @@
 				CE4AC5FB20D94660006563FE /* Sources */,
 				CE4AC5FC20D94660006563FE /* Frameworks */,
 				CE4AC5FD20D94660006563FE /* Resources */,
-				111FA7E936FD85986674C5B0 /* [CP] Embed Pods Frameworks */,
-				FE2E9900FB5916553AE00ABF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,6 +374,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE36A04D20DA517D003E3DBA /* Home.storyboard in Resources */,
+				CE36A05A20DA81F1003E3DBA /* Localizable.strings in Resources */,
 				CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */,
 				CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */,
 			);
@@ -354,21 +398,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		111FA7E936FD85986674C5B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		31127655E04BCF2BDD4F255D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,36 +414,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95F7DA9069E3AD0639776B2C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B4D5F8BE8531A96D93C6776 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0CD38069D0ED746A34AAEFC /* [CP] Check Pods Manifest.lock */ = {
@@ -473,36 +472,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC62C789374AF3D3224489C5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE2E9900FB5916553AE00ABF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -511,9 +480,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE36A04520DA4A43003E3DBA /* SampleModelViewController.swift in Sources */,
+				CE36A05820DA7E9B003E3DBA /* Environment.swift in Sources */,
+				CE36A05420DA73C5003E3DBA /* HomeViewModel.swift in Sources */,
+				CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */,
 				CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */,
 				CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */,
-				CE36A04A20DA4AFC003E3DBA /* SampleScenesViewController.swift in Sources */,
+				CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */,
 				CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

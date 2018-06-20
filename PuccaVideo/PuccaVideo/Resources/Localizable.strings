@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  PuccaVideo
+
+  Copyright © 2018 Isabela Karen Louli. All rights reserved.
+*/
+
+"service.error.generic" = "Something went wrong with your request.";
+"service.invalid.url" = "Sorry, we couldn't contact the server.";
