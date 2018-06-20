@@ -1,5 +1,5 @@
 //
-//  YouTubeServices.swift
+//  SearchServices.swift
 //  PuccaVideo
 
 //  Copyright © 2018 Isabela Karen Louli. All rights reserved.
@@ -8,15 +8,15 @@
 import RxSwift
 
 protocol YouTubeServicesProtocol {
-    func getCurrentPrice(in currency: ISO4217) -> Observable<(CurrentPriceTO?, NetworkResponse)>
-    func getHistoricalPrice(from startDate: String, to endDate: String, in currency: ISO4217) -> Observable<(BPIHistory?, NetworkResponse)>
-
+    func getVideos(by keyWord: String) -> Observable<(Items?)>
+    //www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key={YOUR_API_KEY}
 }
 
-class YouTubeServices: YouTubeServicesProtocol {
+class SearchServices: YouTubeServicesProtocol {
     
     // MARK: - Properties
-    public let kEndpoint = "search?part=snippet&q=cats&key=AIzaSyCwbGziupadfpxuaTv72BsKZxOAQQDDj9A"
+    public let kEndpoint = "search"
+    public let kApiKey = "AIzaSyCwbGziupadfpxuaTv72BsKZxOAQQDDj9A"
     private(set) var dispatcher: NetworkDispatcherProtocol
     
     // MARK: - Lifecycle
@@ -38,9 +38,14 @@ class YouTubeServices: YouTubeServicesProtocol {
      ## Important ##
      [ISO4217 values](https://api.coindesk.com/v1/bpi/supported-currencies.json): all values accepted by bitcoin desk.
      */
-    func getCurrentPrice(in currency: ISO4217) -> Observable<(CurrentPriceTO?, NetworkResponse)> {
-        let path = "currentprice/\(currency.rawValue).json"
-        return dispatcher.response(of: CurrentPriceTO.self, from: path, method: .get)
+//    func getCurrentPrice(in currency: ISO4217) -> Observable<(CurrentPriceTO?, NetworkResponse)> {
+//        let path = "currentprice/\(currency.rawValue).json"
+//        return dispatcher.response(of: CurrentPriceTO.self, from: path, method: .get)
+//    }
+    
+    func getVideos(by keyWord: String) -> Observable<(Items?)> {
+        let path = "?part=snippet&maxResults=20&q=\(keyWord)&key=\(kApiKey)"
+        return dispatcher.response(of: Items.self, from: path, method: .get)
     }
     
     /**
@@ -51,8 +56,8 @@ class YouTubeServices: YouTubeServicesProtocol {
      ## Important ##
      [ISO4217 values](https://api.coindesk.com/v1/bpi/supported-currencies.json): all values accepted by bitcoin desk.
      */
-    func getHistoricalPrice(from startDate: String, to endDate: String, in currency: ISO4217) -> Observable<(BPIHistory?, NetworkResponse)> {
-        let path = "historical/close.json?currency=\(currency.rawValue)&start=\(startDate)&end=\(endDate)"
-        return dispatcher.response(of: BPIHistory.self, from: path, method: .get)
-    }
+//    func getHistoricalPrice(from startDate: String, to endDate: String, in currency: ISO4217) -> Observable<(BPIHistory?, NetworkResponse)> {
+//        let path = "historical/close.json?currency=\(currency.rawValue)&start=\(startDate)&end=\(endDate)"
+//        return dispatcher.response(of: BPIHistory.self, from: path, method: .get)
+//    }
 }

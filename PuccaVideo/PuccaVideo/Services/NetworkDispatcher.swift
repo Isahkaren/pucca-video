@@ -13,7 +13,7 @@ public enum HTTPMethod: String {
 
 protocol NetworkDispatcherProtocol {
     init(url: URL)
-    func response<T: Codable>(of type: T.Type, from path: String, method: HTTPMethod) -> Observable<(T?, NetworkResponse)>
+    func response<T: Codable>(of type: T.Type, from path: String, method: HTTPMethod) -> Observable<([T]?)>
 }
 
 class NetworkDispatcher: NetworkDispatcherProtocol {
@@ -34,25 +34,53 @@ class NetworkDispatcher: NetworkDispatcherProtocol {
     
     // MARK: - Responses
     
+//    /**
+//     - Parameter type: generic object type that conforms with Codable
+//     - Returns: an Observable of item
+//     */
+//    public func response<T: Codable>(of type: T.Type, from path: String, method: HTTPMethod) -> Observable<(T?)> {
+//        return Observable.create { observable in
+//
+//            self.dispatch(path: path, method: method, { (data, error) in
+//                if let error = error {
+//                    // If the request couldn't be completed with success
+//                    // send an error sequence so the subscribers can be notified and
+//                    // the observable can be automatically deallocated
+//                    observable.onError(error)
+//                } else if let data = data {
+//                    let serializedObject = try? JSONDecoder().decode(T.self, from: data)
+//                    observable.onNext(serializedObject)
+//                } else {
+//                    observable.onNext(nil)
+//                }
+//
+//                // After dispatch the sequence of next events
+//                // complete the observable so it can be deallocated
+//                observable.onCompleted()
+//            })
+//
+//            return Disposables.create()
+//        }
+//    }
+    
     /**
-     Dispatch the URLRequest on **URLSession.shared.dataTask**
      - Parameter type: generic object type that conforms with Codable
-     - Returns: an observable of the generic type and the default response object NetworkResponse
+     - Returns: an Observable of items
      */
-    public func response<T: Codable>(of type: T.Type, from path: String, method: HTTPMethod) -> Observable<(T?, NetworkResponse)> {
+    public func response<T: Codable>(of type: T.Type, from path: String, method: HTTPMethod) -> Observable<([T]?)> {
         return Observable.create { observable in
-            self.dispatch(path: path, method: method, { (response) in
-                if let error = response.error {
-                    
+            
+            self.dispatch(path: path, method: method, { (data, error) in
+                if let error = error {
                     // If the request couldn't be completed with success
                     // send an error sequence so the subscribers can be notified and
                     // the observable can be automatically deallocated
                     observable.onError(error)
-                } else if let data = response.data {
-                    let serializedObject = try? JSONDecoder().decode(T.self, from: data)
-                    observable.onNext((serializedObject, response))
+                } else if let data = data {
+                    let serializedObject = try? JSONDecoder().decode([T].self, from: data)
+                    observable.onNext(serializedObject)
                 } else {
-                    observable.onNext((nil, response))
+                    observable.onNext(nil)
                 }
                 
                 // After dispatch the sequence of next events
@@ -67,12 +95,9 @@ class NetworkDispatcher: NetworkDispatcherProtocol {
     // MARK: - URLSession handler
     
     /// Dispatch the request and return the URLSession.shared.dataTask response
-    private func dispatch(path: String, method: HTTPMethod, _ completion: @escaping (NetworkResponse) -> Void) {
-        var networkResponse = NetworkResponse()
-        
+    private func dispatch(path: String, method: HTTPMethod, _ completion: @escaping (_ data: Data?, _ error: NetworkError?) -> Void) {
         guard let requestURL = getURL(with: path) else {
-            networkResponse.error = NetworkError(message: "service.invalid.url".localize())
-            completion(networkResponse)
+            completion(nil, NetworkError(message: "service.invalid.url".localized))
             return
         }
         
@@ -80,24 +105,17 @@ class NetworkDispatcher: NetworkDispatcherProtocol {
         request.httpMethod = method.rawValue
         
         URLSession.shared.dataTask(with: request) { data, res, error in
-            networkResponse.response = res as? HTTPURLResponse
-            networkResponse.request = request
-            networkResponse.data = data
             
-            if let data = data {
-                networkResponse.rawResponse = String(data: data, encoding: .utf8)
+            guard let statusCode = (res as? HTTPURLResponse)?.statusCode,
+                    (200...299 ~= statusCode)
+                    else {
+                        completion(nil, NetworkError(message: "service.error.generic".localized))
+                        return
             }
             
-            guard let statusCode = networkResponse.response?.statusCode,
-                (200...299 ~= statusCode) else {
-                    networkResponse.error = NetworkError(message: "service.error.generic".localize())
-                    completion(networkResponse)
-                    return
-            }
+            completion(data, nil)
             
-            completion(networkResponse)
-            
-            }.resume()
+        }.resume()
     }
     
     // MARK: - Helpers
