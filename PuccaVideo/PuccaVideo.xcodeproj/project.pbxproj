@@ -10,9 +10,16 @@
 		133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */; };
 		2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D152A3F558641792407320 /* Pods_PuccaVideo.framework */; };
 		CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */; };
-		CE36A04520DA4A43003E3DBA /* SampleModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */; };
-		CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */; };
 		CE36A04A20DA4AFC003E3DBA /* SampleScenesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04920DA4AFC003E3DBA /* SampleScenesViewController.swift */; };
+		CE36A05C20DA925C003E3DBA /* YouTubeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05B20DA925C003E3DBA /* YouTubeServices.swift */; };
+		CE36A05E20DA936F003E3DBA /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */; };
+		CE36A06020DAAFDC003E3DBA /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05F20DAAFDC003E3DBA /* NetworkResponse.swift */; };
+		CE36A06220DAB02E003E3DBA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06120DAB02E003E3DBA /* NetworkError.swift */; };
+		CE36A06620DAB2B6003E3DBA /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */; };
+		CE36A06820DAB320003E3DBA /* ThumbnailsMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */; };
+		CE36A06A20DAB3FE003E3DBA /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06920DAB3FE003E3DBA /* Snippet.swift */; };
+		CE36A06C20DAB634003E3DBA /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06B20DAB634003E3DBA /* Id.swift */; };
+		CE36A06E20DAB682003E3DBA /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06D20DAB682003E3DBA /* Items.swift */; };
 		CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5E320D9465E006563FE /* AppDelegate.swift */; };
 		CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EA20D94660006563FE /* Assets.xcassets */; };
 		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
@@ -46,9 +53,16 @@
 		74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A6EBDF14903609C1AC5B57 /* Pods-PuccaVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.release.xcconfig"; sourceTree = "<group>"; };
 		CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConveniencesViewController.swift; sourceTree = "<group>"; };
-		CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModelViewController.swift; sourceTree = "<group>"; };
-		CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleServiceViewController.swift; sourceTree = "<group>"; };
 		CE36A04920DA4AFC003E3DBA /* SampleScenesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleScenesViewController.swift; sourceTree = "<group>"; };
+		CE36A05B20DA925C003E3DBA /* YouTubeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeServices.swift; sourceTree = "<group>"; };
+		CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		CE36A05F20DAAFDC003E3DBA /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		CE36A06120DAB02E003E3DBA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsMedium.swift; sourceTree = "<group>"; };
+		CE36A06920DAB3FE003E3DBA /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		CE36A06B20DAB634003E3DBA /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		CE36A06D20DAB682003E3DBA /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		CE4AC5E020D9465E006563FE /* PuccaVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuccaVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AC5E320D9465E006563FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4AC5EA20D94660006563FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -198,7 +212,13 @@
 		CEF9FA2020D95667007A0EEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */,
+				CE36A05F20DAAFDC003E3DBA /* NetworkResponse.swift */,
+				CE36A06120DAB02E003E3DBA /* NetworkError.swift */,
+				CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */,
+				CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */,
+				CE36A06920DAB3FE003E3DBA /* Snippet.swift */,
+				CE36A06B20DAB634003E3DBA /* Id.swift */,
+				CE36A06D20DAB682003E3DBA /* Items.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,7 +226,8 @@
 		CEF9FA2120D95686007A0EEF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */,
+				CE36A05B20DA925C003E3DBA /* YouTubeServices.swift */,
+				CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -510,11 +531,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE36A04520DA4A43003E3DBA /* SampleModelViewController.swift in Sources */,
 				CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */,
-				CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */,
+				CE36A06220DAB02E003E3DBA /* NetworkError.swift in Sources */,
+				CE36A06620DAB2B6003E3DBA /* Thumbnails.swift in Sources */,
+				CE36A06820DAB320003E3DBA /* ThumbnailsMedium.swift in Sources */,
+				CE36A06E20DAB682003E3DBA /* Items.swift in Sources */,
+				CE36A06020DAAFDC003E3DBA /* NetworkResponse.swift in Sources */,
+				CE36A05C20DA925C003E3DBA /* YouTubeServices.swift in Sources */,
+				CE36A05E20DA936F003E3DBA /* NetworkDispatcher.swift in Sources */,
 				CE36A04A20DA4AFC003E3DBA /* SampleScenesViewController.swift in Sources */,
+				CE36A06A20DAB3FE003E3DBA /* Snippet.swift in Sources */,
 				CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */,
+				CE36A06C20DAB634003E3DBA /* Id.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
