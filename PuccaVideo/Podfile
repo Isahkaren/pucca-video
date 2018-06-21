@@ -7,8 +7,9 @@ target 'PuccaVideo' do
 
   # Pods for PuccaVideo
 
-    pod 'RxSwift',    '~> 4.0'
-    pod 'RxCocoa',    '~> 4.0'
+    pod 'RxSwift',    '4.2'
+    pod 'RxCocoa',    '4.2'
+    pod 'YouTubePlayer-Swift', '1.0'
 
   target 'PuccaVideoTests' do
     inherit! :search_paths

@@ -8,5 +8,5 @@
 import Foundation
 
 struct NetworkError: Error {
-    var message: String?
+    let message: String
 }

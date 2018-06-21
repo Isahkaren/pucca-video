@@ -7,15 +7,15 @@
 
 import RxSwift
 
-protocol YouTubeServicesProtocol {
+protocol SearchServiceProtocol {
     func getVideos(by keyWord: String) -> Observable<(SearchResponse?)>
 }
 
-class SearchServices: YouTubeServicesProtocol {
+class SearchService: SearchServiceProtocol {
     
     // MARK: - Properties
     public let kEndpoint = "search"
-    public let kApiKey = "AIzaSyCwbGziupadfpxuaTv72BsKZxOAQQDDj9A"
+    private let apiKey = Environment.shared.apiKey
     private(set) var dispatcher: NetworkDispatcherProtocol
     
     // MARK: - Lifecycle
@@ -32,7 +32,7 @@ class SearchServices: YouTubeServicesProtocol {
     // MARK: - Services
 
     func getVideos(by keyWord: String) -> Observable<(SearchResponse?)> {
-        let path = "?part=snippet&maxResults=20&q=\(keyWord)&key=\(kApiKey)"
+        let path = "?part=snippet&maxResults=20&q=\(keyWord)&type=video&key=\(apiKey)"
         return dispatcher.response(of: SearchResponse.self, from: path, method: .get)
     }
 }
