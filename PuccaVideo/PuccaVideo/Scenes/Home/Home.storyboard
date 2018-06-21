@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-Ez-wWM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="578"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeIdentifier" rowHeight="181" id="0UI-tw-w77" customClass="HomeTableViewCell" customModule="PuccaVideo" customModuleProvider="target">
@@ -52,10 +52,7 @@
                                                         <constraint firstAttribute="height" constant="133" id="cAt-8E-nvj"/>
                                                     </constraints>
                                                 </imageView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8E5-Eh-5wE">
-                                                    <rect key="frame" x="177" y="80" width="20" height="20"/>
-                                                </activityIndicatorView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 MILIONARIOS que voce nao vai acreditar que existem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iHs-Lg-a6S">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATS Compilation -Funny videos with cats by Isabela Karen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iHs-Lg-a6S">
                                                     <rect key="frame" x="8" y="141" width="359" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.45411001555042563" green="0.45411001555042563" blue="0.45411001555042563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -64,8 +61,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="iHs-Lg-a6S" secondAttribute="trailing" constant="8" id="0ow-nK-poC"/>
-                                                <constraint firstItem="8E5-Eh-5wE" firstAttribute="centerX" secondItem="WLb-yL-e1g" secondAttribute="centerX" id="4YV-LQ-5Ir"/>
-                                                <constraint firstItem="8E5-Eh-5wE" firstAttribute="centerY" secondItem="WLb-yL-e1g" secondAttribute="centerY" id="8Pt-8U-iT1"/>
                                                 <constraint firstItem="iHs-Lg-a6S" firstAttribute="top" secondItem="KQR-Lb-sfa" secondAttribute="bottom" id="OPE-S9-dFK"/>
                                                 <constraint firstItem="KQR-Lb-sfa" firstAttribute="top" secondItem="WLb-yL-e1g" secondAttribute="top" constant="8" id="SV5-61-YcT"/>
                                                 <constraint firstItem="KQR-Lb-sfa" firstAttribute="leading" secondItem="WLb-yL-e1g" secondAttribute="leading" constant="8" id="rdE-2I-fzz"/>
@@ -75,20 +70,29 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="loadingActivityIndicator" destination="8E5-Eh-5wE" id="76Z-Dd-5VO"/>
                                             <outlet property="thumbnailImage" destination="KQR-Lb-sfa" id="1li-kZ-jmq"/>
                                             <outlet property="videoTitleLabel" destination="iHs-Lg-a6S" id="bYx-ez-x1u"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy3-cV-Da6">
+                                <rect key="frame" x="5" y="642" width="365" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.26877391950000001" blue="0.43787116679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="M27-rz-q1q" firstAttribute="bottom" secondItem="yeI-Ez-wWM" secondAttribute="bottom" id="Be3-h2-wET"/>
+                            <constraint firstItem="M27-rz-q1q" firstAttribute="bottom" secondItem="yeI-Ez-wWM" secondAttribute="bottom" constant="25" id="Be3-h2-wET"/>
+                            <constraint firstItem="zy3-cV-Da6" firstAttribute="top" secondItem="yeI-Ez-wWM" secondAttribute="bottom" id="H04-Lh-wWK"/>
                             <constraint firstItem="M27-rz-q1q" firstAttribute="trailing" secondItem="yeI-Ez-wWM" secondAttribute="trailing" id="I5I-nj-64m"/>
                             <constraint firstItem="yeI-Ez-wWM" firstAttribute="leading" secondItem="M27-rz-q1q" secondAttribute="leading" id="aQp-Dl-3a2"/>
+                            <constraint firstItem="zy3-cV-Da6" firstAttribute="leading" secondItem="M27-rz-q1q" secondAttribute="leading" constant="5" id="guC-Ig-fXi"/>
+                            <constraint firstItem="M27-rz-q1q" firstAttribute="trailing" secondItem="zy3-cV-Da6" secondAttribute="trailing" constant="5" id="hlL-mN-Bli"/>
                             <constraint firstItem="yeI-Ez-wWM" firstAttribute="top" secondItem="M27-rz-q1q" secondAttribute="top" id="ukV-0G-i7j"/>
+                            <constraint firstItem="M27-rz-q1q" firstAttribute="bottom" secondItem="zy3-cV-Da6" secondAttribute="bottom" id="v0s-Yx-5f4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M27-rz-q1q"/>
                     </view>
@@ -98,6 +102,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="errorLabel" destination="zy3-cV-Da6" id="bZi-AU-Nxx"/>
+                        <outlet property="searchButton" destination="840-zf-EHS" id="6yY-OP-hC7"/>
                         <outlet property="tableView" destination="yeI-Ez-wWM" id="T2w-2e-7Sd"/>
                     </connections>
                 </viewController>

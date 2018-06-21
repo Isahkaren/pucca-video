@@ -7,12 +7,12 @@
 
 import UIKit
 
+
 class HomeTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
     @IBOutlet weak var thumbnailImage: UIImageView!
-    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var videoTitleLabel: UILabel!
     
     // MARK: - Lifecycle
@@ -23,6 +23,9 @@ class HomeTableViewCell: UITableViewCell {
     
     // MARK: - Helpers
     
-    
+    public func setup(value: Item) {
+        videoTitleLabel.text = value.snippet.title
+
+    }
 
 }

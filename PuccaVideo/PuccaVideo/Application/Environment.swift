@@ -12,5 +12,5 @@ class Environment {
     // MARK: - Properties
     static let shared = Environment()
     
-    var baseUrl = URL(string: "https://www.googleapis.com/youtube/v3")!
+    var baseUrl = URL(string: "https://www.googleapis.com/youtube/v3/")!
 }

@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */; };
 		2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D152A3F558641792407320 /* Pods_PuccaVideo.framework */; };
-		CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */; };
-		CE36A04520DA4A43003E3DBA /* SampleModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */; };
-		CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */; };
 		CE36A04D20DA517D003E3DBA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36A04C20DA517D003E3DBA /* Home.storyboard */; };
 		CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */; };
 		CE36A05420DA73C5003E3DBA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */; };
@@ -25,6 +22,17 @@
 		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
 		CE4AC5F920D94660006563FE /* PuccaVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */; };
 		CE4AC60420D94660006563FE /* PuccaVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */; };
+		CEB19D0520DAE6D10089DD6B /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0420DAE6D10089DD6B /* Id.swift */; };
+		CEB19D0720DAE6DD0089DD6B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0620DAE6DD0089DD6B /* Item.swift */; };
+		CEB19D0920DAE6E70089DD6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0820DAE6E70089DD6B /* NetworkError.swift */; };
+		CEB19D0B20DAE6F20089DD6B /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0A20DAE6F20089DD6B /* Snippet.swift */; };
+		CEB19D0D20DAE7000089DD6B /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0C20DAE7000089DD6B /* Thumbnails.swift */; };
+		CEB19D0F20DAE70E0089DD6B /* ThumbnailsMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0E20DAE70E0089DD6B /* ThumbnailsMedium.swift */; };
+		CEB19D1120DAE73C0089DD6B /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1020DAE73C0089DD6B /* String+Localizable.swift */; };
+		CEB19D1320DAE77A0089DD6B /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1220DAE77A0089DD6B /* NetworkDispatcher.swift */; };
+		CEB19D1520DAE7850089DD6B /* SearchServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1420DAE7850089DD6B /* SearchServices.swift */; };
+		CEB19D1720DB01E00089DD6B /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1620DB01E00089DD6B /* Videos.swift */; };
+		CEB19D1920DB84BC0089DD6B /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1820DB84BC0089DD6B /* SearchResponse.swift */; };
 		D0D697255B21AAB408A86C2B /* Pods_PuccaVideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,9 +60,6 @@
 		555F2861B9B3E0408A9C7E5C /* Pods-PuccaVideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests.release.xcconfig"; sourceTree = "<group>"; };
 		74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A6EBDF14903609C1AC5B57 /* Pods-PuccaVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.release.xcconfig"; sourceTree = "<group>"; };
-		CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConveniencesViewController.swift; sourceTree = "<group>"; };
-		CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModelViewController.swift; sourceTree = "<group>"; };
-		CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleServiceViewController.swift; sourceTree = "<group>"; };
 		CE36A04C20DA517D003E3DBA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -74,6 +79,17 @@
 		CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuccaVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuccaVideoUITests.swift; sourceTree = "<group>"; };
 		CE4AC60520D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB19D0420DAE6D10089DD6B /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		CEB19D0620DAE6DD0089DD6B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CEB19D0820DAE6E70089DD6B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CEB19D0A20DAE6F20089DD6B /* Snippet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		CEB19D0C20DAE7000089DD6B /* Thumbnails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		CEB19D0E20DAE70E0089DD6B /* ThumbnailsMedium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailsMedium.swift; sourceTree = "<group>"; };
+		CEB19D1020DAE73C0089DD6B /* String+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		CEB19D1220DAE77A0089DD6B /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		CEB19D1420DAE7850089DD6B /* SearchServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchServices.swift; sourceTree = "<group>"; };
+		CEB19D1620DB01E00089DD6B /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		CEB19D1820DB84BC0089DD6B /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		D2CDC6E00DF14911C2E3DFB8 /* Pods-PuccaVideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18688D12AA456FDD740F6F0 /* Pods-PuccaVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,7 +259,7 @@
 		CEF9FA1F20D95655007A0EEF /* Conveniences */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */,
+				CEB19D1020DAE73C0089DD6B /* String+Localizable.swift */,
 			);
 			path = Conveniences;
 			sourceTree = "<group>";
@@ -251,7 +267,14 @@
 		CEF9FA2020D95667007A0EEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04320DA4A43003E3DBA /* SampleModelViewController.swift */,
+				CEB19D0E20DAE70E0089DD6B /* ThumbnailsMedium.swift */,
+				CEB19D0C20DAE7000089DD6B /* Thumbnails.swift */,
+				CEB19D0A20DAE6F20089DD6B /* Snippet.swift */,
+				CEB19D0820DAE6E70089DD6B /* NetworkError.swift */,
+				CEB19D0620DAE6DD0089DD6B /* Item.swift */,
+				CEB19D0420DAE6D10089DD6B /* Id.swift */,
+				CEB19D1620DB01E00089DD6B /* Videos.swift */,
+				CEB19D1820DB84BC0089DD6B /* SearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,7 +282,8 @@
 		CEF9FA2120D95686007A0EEF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04720DA4AE3003E3DBA /* SampleServiceViewController.swift */,
+				CEB19D1420DAE7850089DD6B /* SearchServices.swift */,
+				CEB19D1220DAE77A0089DD6B /* NetworkDispatcher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -485,16 +509,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE36A04520DA4A43003E3DBA /* SampleModelViewController.swift in Sources */,
 				CE36A05820DA7E9B003E3DBA /* Environment.swift in Sources */,
+				CEB19D1720DB01E00089DD6B /* Videos.swift in Sources */,
 				CE36A05420DA73C5003E3DBA /* HomeViewModel.swift in Sources */,
+				CEB19D0520DAE6D10089DD6B /* Id.swift in Sources */,
+				CEB19D1320DAE77A0089DD6B /* NetworkDispatcher.swift in Sources */,
+				CEB19D0B20DAE6F20089DD6B /* Snippet.swift in Sources */,
 				CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */,
-				CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */,
-				CE36A04820DA4AE3003E3DBA /* SampleServiceViewController.swift in Sources */,
 				CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */,
+				CEB19D1920DB84BC0089DD6B /* SearchResponse.swift in Sources */,
+				CEB19D0720DAE6DD0089DD6B /* Item.swift in Sources */,
 				CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */,
+				CEB19D1520DAE7850089DD6B /* SearchServices.swift in Sources */,
 				CE36A07220DABC99003E3DBA /* VideoViewController.swift in Sources */,
+				CEB19D0920DAE6E70089DD6B /* NetworkError.swift in Sources */,
+				CEB19D1120DAE73C0089DD6B /* String+Localizable.swift in Sources */,
+				CEB19D0F20DAE70E0089DD6B /* ThumbnailsMedium.swift in Sources */,
 				CE36A07020DABB91003E3DBA /* VideoTableViewCell.swift in Sources */,
+				CEB19D0D20DAE7000089DD6B /* Thumbnails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
