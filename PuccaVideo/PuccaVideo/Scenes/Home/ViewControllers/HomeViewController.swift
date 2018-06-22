@@ -16,20 +16,31 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var keyWordText: UITextField!
+    @IBOutlet weak var keyWordTextField: UITextField!
+    
     
     private var viewModel = HomeViewModel()
     private let bag = DisposeBag()
-    private let homeCellIdentifier = "homeIdentifier"
+    private let homeCellIdentifier = "homeCellIdentifier"
+    private let videoViewSegueIdentifier = "videoViewSegueIdentifier"
     
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyWordText.delegate = self
+        keyWordTextField.delegate = self
         viewModel.searchVideos(by: viewModel.randomWordGenerate())
         setupTableView()
         bind()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == videoViewSegueIdentifier,
+              let id = sender as? String,
+              let videoViewController = segue.destination as? VideoViewController
+              else { return }
+        
+        videoViewController.videoID = id
     }
     
     // MARK: - TextFieldDelegate
@@ -62,6 +73,13 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
                 }
             })
             .disposed(by: bag)
+        
+        tableView.rx.itemSelected
+            .subscribe(onNext: { index in
+                let id = self.viewModel.item(at: index.row).id.videoId
+                self.performSegue(withIdentifier: self.videoViewSegueIdentifier, sender: id)
+            })
+            .disposed(by: bag)
     }
     
     private func bind() {
@@ -74,7 +92,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
             .throttle(1.0, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] in
                 guard let `self` = self,
-                      let text = self.keyWordText.text
+                      let text = self.keyWordTextField.text
                       else { return }
                 self.viewModel.searchVideos(by: text)
             })

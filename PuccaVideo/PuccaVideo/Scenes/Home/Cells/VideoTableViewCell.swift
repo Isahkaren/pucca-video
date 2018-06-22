@@ -11,7 +11,6 @@ class VideoTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
-    @IBOutlet weak var authorProfileImage: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var authorNameLabel: UILabel!
     

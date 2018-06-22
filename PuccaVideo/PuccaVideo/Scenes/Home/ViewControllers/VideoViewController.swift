@@ -19,15 +19,15 @@ class VideoViewController: UIViewController {
     private var viewModel = VideoViewModel()
     private let bag = DisposeBag()
     private let videoCellIdentifier = "videoCellIdentifier"
+    var videoID: String = ""
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        videoView.loadVideoID("aEzZLXBH3rU")
-        viewModel.getComments(by: "m4Jtj2lCMAA")
-
+        videoView.loadVideoID(videoID)
+        viewModel.getComments(by: videoID)
     }
     
     // MARK: - Bind

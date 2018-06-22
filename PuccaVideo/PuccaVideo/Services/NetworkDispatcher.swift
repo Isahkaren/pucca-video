@@ -86,7 +86,7 @@ class NetworkDispatcher: NetworkDispatcherProtocol {
     
     // MARK: - Helpers
     
-    public func getURL(with path: String) -> URL? {
+    public func getURL(with path: String) -> URL? {//addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         guard let urlString = url.appendingPathComponent(path).absoluteString.removingPercentEncoding,
             let requestUrl = URL(string: urlString) else {
                 return nil

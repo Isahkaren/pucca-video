@@ -46,15 +46,20 @@ class HomeViewModel {
     
     // MARK: - Helpers
     
+    func item(at index: Int) -> Item {
+        return videosValues.value[index]
+    }
+    
     func loadImage(at index: Int) {
         videosValues.value[index].snippet.thumbnails.medium.loadImage()
     }
     
+    /**
+     word random to start the application with videos on home
+     */
     func randomWordGenerate() -> String {
         let words = ["cats", "ios", "marvel", "heroes", "brazil", "game","pucca"]
         let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
         return words[randomIndex]
     }
-    
-    
 }

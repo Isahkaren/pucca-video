@@ -22,6 +22,7 @@ class SearchService: SearchServiceProtocol {
     
     init() {
         let url = Environment.shared.baseUrl.appendingPathComponent(kEndpoint)
+        
         dispatcher = NetworkDispatcher(url: url)
     }
     
