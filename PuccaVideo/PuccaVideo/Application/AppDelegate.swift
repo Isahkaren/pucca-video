@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  PuccaVideo
 //
-//  Created by Diego Louli on 19.06.18.
 //  Copyright © 2018 Isabela Karen Louli. All rights reserved.
 //
 

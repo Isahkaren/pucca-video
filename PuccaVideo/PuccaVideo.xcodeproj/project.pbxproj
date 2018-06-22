@@ -9,22 +9,38 @@
 /* Begin PBXBuildFile section */
 		133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */; };
 		2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D152A3F558641792407320 /* Pods_PuccaVideo.framework */; };
-		CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */; };
-		CE36A05C20DA925C003E3DBA /* SearchServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05B20DA925C003E3DBA /* SearchServices.swift */; };
-		CE36A05E20DA936F003E3DBA /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */; };
-		CE36A06220DAB02E003E3DBA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06120DAB02E003E3DBA /* NetworkError.swift */; };
-		CE36A06620DAB2B6003E3DBA /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */; };
-		CE36A06820DAB320003E3DBA /* ThumbnailsMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */; };
-		CE36A06A20DAB3FE003E3DBA /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06920DAB3FE003E3DBA /* Snippet.swift */; };
-		CE36A06C20DAB634003E3DBA /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06B20DAB634003E3DBA /* Id.swift */; };
-		CE36A06E20DAB682003E3DBA /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06D20DAB682003E3DBA /* Items.swift */; };
-		CE36A07420DAC417003E3DBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE36A07320DAC417003E3DBA /* Default-568h@2x.png */; };
-		CE36A07620DAD323003E3DBA /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A07520DAD323003E3DBA /* String+Localizable.swift */; };
+		CE36A04D20DA517D003E3DBA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36A04C20DA517D003E3DBA /* Home.storyboard */; };
+		CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */; };
+		CE36A05420DA73C5003E3DBA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */; };
+		CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05520DA741B003E3DBA /* HomeViewController.swift */; };
+		CE36A05820DA7E9B003E3DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05720DA7E9B003E3DBA /* Environment.swift */; };
+		CE36A05A20DA81F1003E3DBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE36A05920DA81F1003E3DBA /* Localizable.strings */; };
+		CE36A07020DABB91003E3DBA /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A06F20DABB91003E3DBA /* VideoTableViewCell.swift */; };
+		CE36A07220DABC99003E3DBA /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A07120DABC99003E3DBA /* VideoViewController.swift */; };
 		CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5E320D9465E006563FE /* AppDelegate.swift */; };
 		CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EA20D94660006563FE /* Assets.xcassets */; };
 		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
 		CE4AC5F920D94660006563FE /* PuccaVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */; };
 		CE4AC60420D94660006563FE /* PuccaVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */; };
+		CEB19D0520DAE6D10089DD6B /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0420DAE6D10089DD6B /* Id.swift */; };
+		CEB19D0720DAE6DD0089DD6B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0620DAE6DD0089DD6B /* Item.swift */; };
+		CEB19D0920DAE6E70089DD6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0820DAE6E70089DD6B /* NetworkError.swift */; };
+		CEB19D0B20DAE6F20089DD6B /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0A20DAE6F20089DD6B /* Snippet.swift */; };
+		CEB19D0D20DAE7000089DD6B /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0C20DAE7000089DD6B /* Thumbnails.swift */; };
+		CEB19D0F20DAE70E0089DD6B /* ThumbnailsMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0E20DAE70E0089DD6B /* ThumbnailsMedium.swift */; };
+		CEB19D1120DAE73C0089DD6B /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1020DAE73C0089DD6B /* String+Localizable.swift */; };
+		CEB19D1320DAE77A0089DD6B /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1220DAE77A0089DD6B /* NetworkDispatcher.swift */; };
+		CEB19D1520DAE7850089DD6B /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1420DAE7850089DD6B /* SearchService.swift */; };
+		CEB19D1720DB01E00089DD6B /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1620DB01E00089DD6B /* Videos.swift */; };
+		CEB19D1920DB84BC0089DD6B /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1820DB84BC0089DD6B /* SearchResponse.swift */; };
+		CEB19D1D20DBE4FE0089DD6B /* CommentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1C20DBE4FE0089DD6B /* CommentsResponse.swift */; };
+		CEB19D1F20DBE69A0089DD6B /* CommentsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D1E20DBE69A0089DD6B /* CommentsItem.swift */; };
+		CEB19D2120DBE7890089DD6B /* ComentsSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2020DBE7890089DD6B /* ComentsSnippet.swift */; };
+		CEB19D2320DBE7EF0089DD6B /* TopLevelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2220DBE7EF0089DD6B /* TopLevelComment.swift */; };
+		CEB19D2720DBEA2F0089DD6B /* CommentsSnippetInTopLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2620DBEA2F0089DD6B /* CommentsSnippetInTopLevel.swift */; };
+		CEB19D2920DC178E0089DD6B /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2820DC178E0089DD6B /* VideoViewModel.swift */; };
+		CEB19D2B20DC1A290089DD6B /* CommentThreadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2A20DC1A290089DD6B /* CommentThreadsService.swift */; };
+		CEFDA95D20DC2B71006AF494 /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA95C20DC2B71006AF494 /* ImageDownloadService.swift */; };
 		D0D697255B21AAB408A86C2B /* Pods_PuccaVideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,17 +68,14 @@
 		555F2861B9B3E0408A9C7E5C /* Pods-PuccaVideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests.release.xcconfig"; sourceTree = "<group>"; };
 		74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A6EBDF14903609C1AC5B57 /* Pods-PuccaVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.release.xcconfig"; sourceTree = "<group>"; };
-		CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConveniencesViewController.swift; sourceTree = "<group>"; };
-		CE36A05B20DA925C003E3DBA /* SearchServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServices.swift; sourceTree = "<group>"; };
-		CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
-		CE36A06120DAB02E003E3DBA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
-		CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsMedium.swift; sourceTree = "<group>"; };
-		CE36A06920DAB3FE003E3DBA /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
-		CE36A06B20DAB634003E3DBA /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
-		CE36A06D20DAB682003E3DBA /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
-		CE36A07320DAC417003E3DBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CE36A07520DAD323003E3DBA /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		CE36A04C20DA517D003E3DBA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE36A05520DA741B003E3DBA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE36A05720DA7E9B003E3DBA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CE36A05920DA81F1003E3DBA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CE36A06F20DABB91003E3DBA /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		CE36A07120DABC99003E3DBA /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		CE4AC5E020D9465E006563FE /* PuccaVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuccaVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AC5E320D9465E006563FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4AC5EA20D94660006563FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +87,25 @@
 		CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuccaVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuccaVideoUITests.swift; sourceTree = "<group>"; };
 		CE4AC60520D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB19D0420DAE6D10089DD6B /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		CEB19D0620DAE6DD0089DD6B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CEB19D0820DAE6E70089DD6B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CEB19D0A20DAE6F20089DD6B /* Snippet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		CEB19D0C20DAE7000089DD6B /* Thumbnails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		CEB19D0E20DAE70E0089DD6B /* ThumbnailsMedium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailsMedium.swift; sourceTree = "<group>"; };
+		CEB19D1020DAE73C0089DD6B /* String+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		CEB19D1220DAE77A0089DD6B /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		CEB19D1420DAE7850089DD6B /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		CEB19D1620DB01E00089DD6B /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		CEB19D1820DB84BC0089DD6B /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		CEB19D1C20DBE4FE0089DD6B /* CommentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsResponse.swift; sourceTree = "<group>"; };
+		CEB19D1E20DBE69A0089DD6B /* CommentsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsItem.swift; sourceTree = "<group>"; };
+		CEB19D2020DBE7890089DD6B /* ComentsSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentsSnippet.swift; sourceTree = "<group>"; };
+		CEB19D2220DBE7EF0089DD6B /* TopLevelComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelComment.swift; sourceTree = "<group>"; };
+		CEB19D2620DBEA2F0089DD6B /* CommentsSnippetInTopLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsSnippetInTopLevel.swift; sourceTree = "<group>"; };
+		CEB19D2820DC178E0089DD6B /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		CEB19D2A20DC1A290089DD6B /* CommentThreadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentThreadsService.swift; sourceTree = "<group>"; };
+		CEFDA95C20DC2B71006AF494 /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
 		D2CDC6E00DF14911C2E3DFB8 /* Pods-PuccaVideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuccaVideoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18688D12AA456FDD740F6F0 /* Pods-PuccaVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,10 +162,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE36A04B20DA50E5003E3DBA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05020DA51CE003E3DBA /* Cells */,
+				CE36A04F20DA51B7003E3DBA /* ViewModels */,
+				CE36A04E20DA51A2003E3DBA /* ViewControllers */,
+				CE36A04C20DA517D003E3DBA /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE36A04E20DA51A2003E3DBA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05520DA741B003E3DBA /* HomeViewController.swift */,
+				CE36A07120DABC99003E3DBA /* VideoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE36A04F20DA51B7003E3DBA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05320DA73C5003E3DBA /* HomeViewModel.swift */,
+				CEB19D2820DC178E0089DD6B /* VideoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE36A05020DA51CE003E3DBA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */,
+				CE36A06F20DABB91003E3DBA /* VideoTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CE4AC5D720D9465E006563FE = {
 			isa = PBXGroup;
 			children = (
-				CE36A07320DAC417003E3DBA /* Default-568h@2x.png */,
 				CE4AC5E220D9465E006563FE /* PuccaVideo */,
 				CE4AC5F720D94660006563FE /* PuccaVideoTests */,
 				CE4AC60220D94660006563FE /* PuccaVideoUITests */,
@@ -189,6 +258,7 @@
 			children = (
 				CE4AC5E320D9465E006563FE /* AppDelegate.swift */,
 				CE4AC5EF20D94660006563FE /* Info.plist */,
+				CE36A05720DA7E9B003E3DBA /* Environment.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -196,6 +266,7 @@
 		CEF9FA1E20D9563D007A0EEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE36A05920DA81F1003E3DBA /* Localizable.strings */,
 				CE4AC5EA20D94660006563FE /* Assets.xcassets */,
 				CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */,
 			);
@@ -205,8 +276,7 @@
 		CEF9FA1F20D95655007A0EEF /* Conveniences */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A04120DA4A2E003E3DBA /* SampleConveniencesViewController.swift */,
-				CE36A07520DAD323003E3DBA /* String+Localizable.swift */,
+				CEB19D1020DAE73C0089DD6B /* String+Localizable.swift */,
 			);
 			path = Conveniences;
 			sourceTree = "<group>";
@@ -214,12 +284,19 @@
 		CEF9FA2020D95667007A0EEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A06120DAB02E003E3DBA /* NetworkError.swift */,
-				CE36A06520DAB2B6003E3DBA /* Thumbnails.swift */,
-				CE36A06720DAB320003E3DBA /* ThumbnailsMedium.swift */,
-				CE36A06920DAB3FE003E3DBA /* Snippet.swift */,
-				CE36A06B20DAB634003E3DBA /* Id.swift */,
-				CE36A06D20DAB682003E3DBA /* Items.swift */,
+				CEB19D0E20DAE70E0089DD6B /* ThumbnailsMedium.swift */,
+				CEB19D0C20DAE7000089DD6B /* Thumbnails.swift */,
+				CEB19D0A20DAE6F20089DD6B /* Snippet.swift */,
+				CEB19D0820DAE6E70089DD6B /* NetworkError.swift */,
+				CEB19D0620DAE6DD0089DD6B /* Item.swift */,
+				CEB19D0420DAE6D10089DD6B /* Id.swift */,
+				CEB19D1620DB01E00089DD6B /* Videos.swift */,
+				CEB19D1820DB84BC0089DD6B /* SearchResponse.swift */,
+				CEB19D1C20DBE4FE0089DD6B /* CommentsResponse.swift */,
+				CEB19D1E20DBE69A0089DD6B /* CommentsItem.swift */,
+				CEB19D2020DBE7890089DD6B /* ComentsSnippet.swift */,
+				CEB19D2220DBE7EF0089DD6B /* TopLevelComment.swift */,
+				CEB19D2620DBEA2F0089DD6B /* CommentsSnippetInTopLevel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,8 +304,10 @@
 		CEF9FA2120D95686007A0EEF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CE36A05B20DA925C003E3DBA /* SearchServices.swift */,
-				CE36A05D20DA936F003E3DBA /* NetworkDispatcher.swift */,
+				CEB19D2A20DC1A290089DD6B /* CommentThreadsService.swift */,
+				CEB19D1420DAE7850089DD6B /* SearchService.swift */,
+				CEB19D1220DAE77A0089DD6B /* NetworkDispatcher.swift */,
+				CEFDA95C20DC2B71006AF494 /* ImageDownloadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -236,6 +315,7 @@
 		CEF9FA2220D956A2007A0EEF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CE36A04B20DA50E5003E3DBA /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -252,7 +332,6 @@
 				CE4AC5DD20D9465E006563FE /* Frameworks */,
 				CE4AC5DE20D9465E006563FE /* Resources */,
 				BF5FF3674A024889A7B6EF9F /* [CP] Embed Pods Frameworks */,
-				9B4D5F8BE8531A96D93C6776 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,8 +350,6 @@
 				CE4AC5F020D94660006563FE /* Sources */,
 				CE4AC5F120D94660006563FE /* Frameworks */,
 				CE4AC5F220D94660006563FE /* Resources */,
-				95F7DA9069E3AD0639776B2C /* [CP] Embed Pods Frameworks */,
-				DC62C789374AF3D3224489C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,8 +369,6 @@
 				CE4AC5FB20D94660006563FE /* Sources */,
 				CE4AC5FC20D94660006563FE /* Frameworks */,
 				CE4AC5FD20D94660006563FE /* Resources */,
-				111FA7E936FD85986674C5B0 /* [CP] Embed Pods Frameworks */,
-				FE2E9900FB5916553AE00ABF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,9 +428,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE36A04D20DA517D003E3DBA /* Home.storyboard in Resources */,
+				CE36A05A20DA81F1003E3DBA /* Localizable.strings in Resources */,
 				CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */,
 				CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */,
-				CE36A07420DAC417003E3DBA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,21 +452,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		111FA7E936FD85986674C5B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		31127655E04BCF2BDD4F255D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,36 +468,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95F7DA9069E3AD0639776B2C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B4D5F8BE8531A96D93C6776 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0CD38069D0ED746A34AAEFC /* [CP] Check Pods Manifest.lock */ = {
@@ -484,45 +515,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer-Swift/YouTubePlayer_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideo/Pods-PuccaVideo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DC62C789374AF3D3224489C5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE2E9900FB5916553AE00ABF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuccaVideoUITests/Pods-PuccaVideoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -532,17 +535,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE36A04220DA4A2E003E3DBA /* SampleConveniencesViewController.swift in Sources */,
-				CE36A06220DAB02E003E3DBA /* NetworkError.swift in Sources */,
-				CE36A06620DAB2B6003E3DBA /* Thumbnails.swift in Sources */,
-				CE36A06820DAB320003E3DBA /* ThumbnailsMedium.swift in Sources */,
-				CE36A06E20DAB682003E3DBA /* Items.swift in Sources */,
-				CE36A05C20DA925C003E3DBA /* SearchServices.swift in Sources */,
-				CE36A05E20DA936F003E3DBA /* NetworkDispatcher.swift in Sources */,
-				CE36A06A20DAB3FE003E3DBA /* Snippet.swift in Sources */,
+				CEB19D2320DBE7EF0089DD6B /* TopLevelComment.swift in Sources */,
+				CE36A05820DA7E9B003E3DBA /* Environment.swift in Sources */,
+				CEB19D1720DB01E00089DD6B /* Videos.swift in Sources */,
+				CE36A05420DA73C5003E3DBA /* HomeViewModel.swift in Sources */,
+				CEB19D0520DAE6D10089DD6B /* Id.swift in Sources */,
+				CEB19D1320DAE77A0089DD6B /* NetworkDispatcher.swift in Sources */,
+				CEB19D0B20DAE6F20089DD6B /* Snippet.swift in Sources */,
+				CEB19D1F20DBE69A0089DD6B /* CommentsItem.swift in Sources */,
+				CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */,
+				CE36A05620DA741B003E3DBA /* HomeViewController.swift in Sources */,
+				CEB19D2920DC178E0089DD6B /* VideoViewModel.swift in Sources */,
+				CEB19D1920DB84BC0089DD6B /* SearchResponse.swift in Sources */,
+				CEB19D0720DAE6DD0089DD6B /* Item.swift in Sources */,
+				CEB19D2120DBE7890089DD6B /* ComentsSnippet.swift in Sources */,
 				CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */,
-				CE36A06C20DAB634003E3DBA /* Id.swift in Sources */,
-				CE36A07620DAD323003E3DBA /* String+Localizable.swift in Sources */,
+				CEB19D1520DAE7850089DD6B /* SearchService.swift in Sources */,
+				CEB19D2720DBEA2F0089DD6B /* CommentsSnippetInTopLevel.swift in Sources */,
+				CE36A07220DABC99003E3DBA /* VideoViewController.swift in Sources */,
+				CEB19D0920DAE6E70089DD6B /* NetworkError.swift in Sources */,
+				CEB19D1D20DBE4FE0089DD6B /* CommentsResponse.swift in Sources */,
+				CEB19D1120DAE73C0089DD6B /* String+Localizable.swift in Sources */,
+				CEFDA95D20DC2B71006AF494 /* ImageDownloadService.swift in Sources */,
+				CEB19D0F20DAE70E0089DD6B /* ThumbnailsMedium.swift in Sources */,
+				CE36A07020DABB91003E3DBA /* VideoTableViewCell.swift in Sources */,
+				CEB19D2B20DC1A290089DD6B /* CommentThreadsService.swift in Sources */,
+				CEB19D0D20DAE7000089DD6B /* Thumbnails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
