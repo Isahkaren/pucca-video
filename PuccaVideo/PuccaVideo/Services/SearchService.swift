@@ -33,7 +33,8 @@ class SearchService: SearchServiceProtocol {
     // MARK: - Services
 
     func getVideos(by keyWord: String) -> Observable<(SearchResponse?)> {
-        let path = "?part=snippet&maxResults=20&q=\(keyWord)&type=video&key=\(apiKey)"
+        let encodeKeyWord = keyWord.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let path = "?part=snippet&maxResults=20&q=\(encodeKeyWord)&type=video&key=\(apiKey)"
         return dispatcher.response(of: SearchResponse.self, from: path, method: .get)
     }
 }
