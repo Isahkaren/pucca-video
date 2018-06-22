@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D81CB998C72DEA5BE672C3 /* Pods_PuccaVideoTests.framework */; };
 		2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D152A3F558641792407320 /* Pods_PuccaVideo.framework */; };
 		CE36A04D20DA517D003E3DBA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36A04C20DA517D003E3DBA /* Home.storyboard */; };
 		CE36A05220DA7361003E3DBA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A05120DA7361003E3DBA /* HomeTableViewCell.swift */; };
@@ -20,8 +19,6 @@
 		CE4AC5E420D9465E006563FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5E320D9465E006563FE /* AppDelegate.swift */; };
 		CE4AC5EB20D94660006563FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EA20D94660006563FE /* Assets.xcassets */; };
 		CE4AC5EE20D94660006563FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */; };
-		CE4AC5F920D94660006563FE /* PuccaVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */; };
-		CE4AC60420D94660006563FE /* PuccaVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */; };
 		CEB19D0520DAE6D10089DD6B /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0420DAE6D10089DD6B /* Id.swift */; };
 		CEB19D0720DAE6DD0089DD6B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0620DAE6DD0089DD6B /* Item.swift */; };
 		CEB19D0920DAE6E70089DD6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D0820DAE6E70089DD6B /* NetworkError.swift */; };
@@ -41,25 +38,7 @@
 		CEB19D2920DC178E0089DD6B /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2820DC178E0089DD6B /* VideoViewModel.swift */; };
 		CEB19D2B20DC1A290089DD6B /* CommentThreadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19D2A20DC1A290089DD6B /* CommentThreadsService.swift */; };
 		CEFDA95D20DC2B71006AF494 /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA95C20DC2B71006AF494 /* ImageDownloadService.swift */; };
-		D0D697255B21AAB408A86C2B /* Pods_PuccaVideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D9E399D2C7A550FB97A553 /* Pods_PuccaVideoUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CE4AC5F520D94660006563FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE4AC5D820D9465E006563FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE4AC5DF20D9465E006563FE;
-			remoteInfo = PuccaVideo;
-		};
-		CE4AC60020D94660006563FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE4AC5D820D9465E006563FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE4AC5DF20D9465E006563FE;
-			remoteInfo = PuccaVideo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		076161CA8FE72900BDFC444A /* Pods-PuccaVideoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuccaVideoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuccaVideoTests/Pods-PuccaVideoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,12 +60,6 @@
 		CE4AC5EA20D94660006563FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4AC5ED20D94660006563FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4AC5EF20D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE4AC5F420D94660006563FE /* PuccaVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuccaVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuccaVideoTests.swift; sourceTree = "<group>"; };
-		CE4AC5FA20D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuccaVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuccaVideoUITests.swift; sourceTree = "<group>"; };
-		CE4AC60520D94660006563FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB19D0420DAE6D10089DD6B /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
 		CEB19D0620DAE6DD0089DD6B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CEB19D0820DAE6E70089DD6B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -117,22 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8663957B2E5329F14B81D0 /* Pods_PuccaVideo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE4AC5F120D94660006563FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				133D4EC38B6790D8500E408C /* Pods_PuccaVideoTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE4AC5FC20D94660006563FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0D697255B21AAB408A86C2B /* Pods_PuccaVideoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				CE4AC5E220D9465E006563FE /* PuccaVideo */,
-				CE4AC5F720D94660006563FE /* PuccaVideoTests */,
-				CE4AC60220D94660006563FE /* PuccaVideoUITests */,
 				CE4AC5E120D9465E006563FE /* Products */,
 				A67C3145194DEF743E597620 /* Pods */,
 				5895EC2E36F7A4A7503612FD /* Frameworks */,
@@ -216,8 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				CE4AC5E020D9465E006563FE /* PuccaVideo.app */,
-				CE4AC5F420D94660006563FE /* PuccaVideoTests.xctest */,
-				CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,24 +186,6 @@
 				CEF9FA2220D956A2007A0EEF /* Scenes */,
 			);
 			path = PuccaVideo;
-			sourceTree = "<group>";
-		};
-		CE4AC5F720D94660006563FE /* PuccaVideoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE4AC5F820D94660006563FE /* PuccaVideoTests.swift */,
-				CE4AC5FA20D94660006563FE /* Info.plist */,
-			);
-			path = PuccaVideoTests;
-			sourceTree = "<group>";
-		};
-		CE4AC60220D94660006563FE /* PuccaVideoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CE4AC60320D94660006563FE /* PuccaVideoUITests.swift */,
-				CE4AC60520D94660006563FE /* Info.plist */,
-			);
-			path = PuccaVideoUITests;
 			sourceTree = "<group>";
 		};
 		CEF9FA1D20D9561B007A0EEF /* Application */ = {
@@ -342,44 +277,6 @@
 			productReference = CE4AC5E020D9465E006563FE /* PuccaVideo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE4AC5F320D94660006563FE /* PuccaVideoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE4AC60B20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoTests" */;
-			buildPhases = (
-				B0CD38069D0ED746A34AAEFC /* [CP] Check Pods Manifest.lock */,
-				CE4AC5F020D94660006563FE /* Sources */,
-				CE4AC5F120D94660006563FE /* Frameworks */,
-				CE4AC5F220D94660006563FE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE4AC5F620D94660006563FE /* PBXTargetDependency */,
-			);
-			name = PuccaVideoTests;
-			productName = PuccaVideoTests;
-			productReference = CE4AC5F420D94660006563FE /* PuccaVideoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CE4AC5FE20D94660006563FE /* PuccaVideoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE4AC60E20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoUITests" */;
-			buildPhases = (
-				31127655E04BCF2BDD4F255D /* [CP] Check Pods Manifest.lock */,
-				CE4AC5FB20D94660006563FE /* Sources */,
-				CE4AC5FC20D94660006563FE /* Frameworks */,
-				CE4AC5FD20D94660006563FE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE4AC60120D94660006563FE /* PBXTargetDependency */,
-			);
-			name = PuccaVideoUITests;
-			productName = PuccaVideoUITests;
-			productReference = CE4AC5FF20D94660006563FE /* PuccaVideoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -392,14 +289,6 @@
 				TargetAttributes = {
 					CE4AC5DF20D9465E006563FE = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					CE4AC5F320D94660006563FE = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = CE4AC5DF20D9465E006563FE;
-					};
-					CE4AC5FE20D94660006563FE = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = CE4AC5DF20D9465E006563FE;
 					};
 				};
 			};
@@ -417,8 +306,6 @@
 			projectRoot = "";
 			targets = (
 				CE4AC5DF20D9465E006563FE /* PuccaVideo */,
-				CE4AC5F320D94660006563FE /* PuccaVideoTests */,
-				CE4AC5FE20D94660006563FE /* PuccaVideoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -435,59 +322,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE4AC5F220D94660006563FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE4AC5FD20D94660006563FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31127655E04BCF2BDD4F255D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PuccaVideoUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0CD38069D0ED746A34AAEFC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PuccaVideoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BBA63AC12E85A29285F87BFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -564,36 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE4AC5F020D94660006563FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE4AC5F920D94660006563FE /* PuccaVideoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE4AC5FB20D94660006563FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE4AC60420D94660006563FE /* PuccaVideoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE4AC5F620D94660006563FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE4AC5DF20D9465E006563FE /* PuccaVideo */;
-			targetProxy = CE4AC5F520D94660006563FE /* PBXContainerItemProxy */;
-		};
-		CE4AC60120D94660006563FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE4AC5DF20D9465E006563FE /* PuccaVideo */;
-			targetProxy = CE4AC60020D94660006563FE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE4AC5EC20D94660006563FE /* LaunchScreen.storyboard */ = {
@@ -757,88 +565,6 @@
 			};
 			name = Release;
 		};
-		CE4AC60C20D94660006563FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 076161CA8FE72900BDFC444A /* Pods-PuccaVideoTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PuccaVideoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuccaVideo.app/PuccaVideo";
-			};
-			name = Debug;
-		};
-		CE4AC60D20D94660006563FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 555F2861B9B3E0408A9C7E5C /* Pods-PuccaVideoTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PuccaVideoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuccaVideo.app/PuccaVideo";
-			};
-			name = Release;
-		};
-		CE4AC60F20D94660006563FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40E59347F6F9E837B7A965F0 /* Pods-PuccaVideoUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PuccaVideoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PuccaVideo;
-			};
-			name = Debug;
-		};
-		CE4AC61020D94660006563FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2CDC6E00DF14911C2E3DFB8 /* Pods-PuccaVideoUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PuccaVideoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = isabelaLouli.PuccaVideoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PuccaVideo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -856,24 +582,6 @@
 			buildConfigurations = (
 				CE4AC60920D94660006563FE /* Debug */,
 				CE4AC60A20D94660006563FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE4AC60B20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE4AC60C20D94660006563FE /* Debug */,
-				CE4AC60D20D94660006563FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE4AC60E20D94660006563FE /* Build configuration list for PBXNativeTarget "PuccaVideoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE4AC60F20D94660006563FE /* Debug */,
-				CE4AC61020D94660006563FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

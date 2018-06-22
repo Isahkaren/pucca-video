@@ -7,7 +7,7 @@ PODS:
 DEPENDENCIES:
   - RxCocoa (= 4.2)
   - RxSwift (= 4.2)
-  - YouTubePlayer-Swift (~> 1.0)
+  - YouTubePlayer-Swift (= 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -20,6 +20,6 @@ SPEC CHECKSUMS:
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
 
-PODFILE CHECKSUM: 92caa9e3975b5a7d9f863ec9243a5ca0b8f710f0
+PODFILE CHECKSUM: 86f3a5ae80ded0237407008e1c7da3ddafe02cfa
 
 COCOAPODS: 1.5.3

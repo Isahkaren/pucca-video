@@ -58,7 +58,7 @@ class HomeViewModel {
      word random to start the application with videos on home
      */
     func randomWordGenerate() -> String {
-        let words = ["cats", "ios", "marvel", "heroes", "brazil", "game","pucca"]
+        let words = ["cats", "ios", "marvel", "brazil", "game","pucca"]
         let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
         return words[randomIndex]
     }
