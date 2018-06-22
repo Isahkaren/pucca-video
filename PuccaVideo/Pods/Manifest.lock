@@ -1,0 +1,25 @@
+PODS:
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - YouTubePlayer-Swift (1.0)
+
+DEPENDENCIES:
+  - RxCocoa (= 4.2)
+  - RxSwift (= 4.2)
+  - YouTubePlayer-Swift (= 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxSwift
+    - YouTubePlayer-Swift
+
+SPEC CHECKSUMS:
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
+
+PODFILE CHECKSUM: 86f3a5ae80ded0237407008e1c7da3ddafe02cfa
+
+COCOAPODS: 1.5.3
